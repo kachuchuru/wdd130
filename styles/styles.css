@@ -24,3 +24,9 @@ img {
 p {
     padding: 10px;
 }
+
+i {
+    color: darkblue;
+    font-size: 30px;
+    margin-left: 10px;
+}
