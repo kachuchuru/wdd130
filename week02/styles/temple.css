@@ -20,7 +20,7 @@ header {
 main {
     width: 300px;
     margin: 0 auto;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 
 }
 
@@ -33,6 +33,7 @@ h1 {
 
 h2 {
     border-bottom: 1px solid;
+    font-size: 0.9rem;
 }
 
 img {
