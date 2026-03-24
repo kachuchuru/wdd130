@@ -1,12 +1,11 @@
 :root {
     --primary-color: #055a05;
     /*forest green*/
-    --secondary-color: #f4a261;
-    /*warm sand*/
+    --secondary-color: blue;
+    /*blue*/
     --accent1-color: #264653;
     /*dark slate blue*/
-    --accent2-color: #e9c46a;
-    /*light golden yellow*/
+
     --heading-font: "Times New Roman", "Georgia", Serif;
     --body-font: Arial, Helvetica, Sans-serif;
     --paragraph-color: white;
@@ -50,6 +49,10 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+section h2 {
+    color: var(--secondary-color);
 }
 
 .socialmedia a {
