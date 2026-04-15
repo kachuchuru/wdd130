@@ -248,6 +248,12 @@ section h2 {
 
 }
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 .map,
 .form-section {
     flex: 1;
@@ -258,7 +264,7 @@ section h2 {
     height: 300px;
 }
 
-.our-team {
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -270,45 +276,77 @@ section h2 {
     margin: 10px auto;
 }
 
-.our-team h2 {
-    grid-column: 1/4;
-    grid-row: 1;
-    text-align: center;
+.card-container {
+    align-items: stretch;
 }
 
-.employee-profile {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 0 auto;
-}
-
-.employee-profile figure {
-    background-color: #f9f9f9;
-    padding: 2px;
-    border-radius: 10px;
-    height: 250px;
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    width: 255px;
+    gap: 10px;
 }
 
-.employee-profile img {
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    width: 150px;
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
 }
 
-.employee-profile figcaption {
-    margin-top: 5px;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+}
+
+form label {
     font-weight: bold;
-    color: #333;
-    font-size: 1rem;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form label {
+    display: block;
+}
+
+label[for="newsletter"] {
+    display: block;
+    text-align: center;
+}
+
+form input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: flex;
+    gap: 6px;
+    font-weight: normal;
+    cursor: pointer;
+
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.modern-form input[type="radio"],
+.modern-form input[type="checkbox"] {
+    width: auto;
 }
 
 .company-page {
@@ -340,6 +378,43 @@ section h2 {
     color: #111;
 }
 
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.modern-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--dark);
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label,
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000;
+}
+
+.modern-form input[type="text"],
+.modern-form input[type="email"],
+.modern-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid#ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
 input,
 textarea,
 button {
@@ -362,4 +437,211 @@ button {
 
 .form-section h2 {
     text-align: center;
+}
+
+.hero .btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate((-50%, -50%));
+}
+
+.btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    background: #867a7a;
+}
+
+.trips {
+    background: #f1faff;
+    padding: 40px 0;
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.grid-container img {
+    width: 100%;
+}
+
+.employees {
+    background: #f5f7fa;
+    padding: 60px 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px 20px;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.figure-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.figure-card img {
+    width: 98%;
+    background: white;
+    border-radius: 10px;
+}
+
+.figure-card figcaption {
+    padding: 5px;
+    text-align: center;
+}
+
+.figure-card h3 {
+    margin-top: 5px;
+    color: #0077cc;
+}
+
+.figure-card p {
+    color: #555;
+    margin-top: 2px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: dark;
+}
+
+.card p {
+    padding: 0 15px;
+}
+
+.cta {
+    text-align: center;
+    padding: 40px;
+    background: rgb(239, 151, 151);
+
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.newsletter {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: var(--secondary-color);
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+}
+
+.table.container {
+    padding: 40px 0;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.checkbox-group input {
+    width: auto;
 }
