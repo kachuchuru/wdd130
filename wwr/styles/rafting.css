@@ -361,17 +361,16 @@ form input[type="checkbox"] {
     line-height: 0.1;
     background-color: #f9f9f9;
     margin: 0 auto;
-    text-align: centre;
     padding: 20px;
 }
 
 .form-section {
-    margin: 1rem;
-    border: 1px;
-    border-radius: 1.0em;
-    padding: 1rem;
-    background-color: #c9bdc8;
-    color: #111;
+    margin: ;
+    border: ;
+    border-radius: ;
+    padding: ;
+    background-color: ;
+    color: ;
 }
 
 .form-container {
@@ -439,7 +438,7 @@ button {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate((-50%, -50%));
+
 }
 
 .btn {
@@ -455,7 +454,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 40px;
-    background: #867a7a;
+    background: white;
 }
 
 .trips {
@@ -476,11 +475,6 @@ button {
 
 .grid-container img {
     width: 100%;
-}
-
-.employees {
-    background: #f5f7fa;
-    padding: 60px 20px;
 }
 
 .card-container {
@@ -511,7 +505,7 @@ button {
 
 .figure-card h3 {
     margin-top: 5px;
-    color: #0077cc;
+    color: black;
 }
 
 .figure-card p {
