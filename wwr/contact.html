@@ -44,9 +44,9 @@
         <section class="contact-grid">
             <div class="container grid-2">
                 <div class="map">
-                    <iframe src="
-                  https://www.google.com/maps?q=Dar +es+Salaal&output=embed" width="100%"
-                      height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe class="map-frame" src="
+                  https://www.google.com/maps?q=Dar +es+Salaal&output=embed"
+                      loading="lazy"></iframe>
 
 
                 </div>
@@ -68,20 +68,22 @@
                         <div class="form-group">
                             <p class="form-lable">Purpose of Message</p>
                             <div class="radio-group">
-                                <label><input type="radio" name="purpose" required>General
+                                <label><input type="radio" id="name" name="purpose" required>General
                                     Inquiry</label>
-                                <label><input type="radio" name="purpose">Reservation
+                                <label><input type="radio" id="purpose" name="purpose">Reservation
                                     Question</label>
-                                <label><input type="radio" name="purpose">Website suggestion</label>
+                                <label><input type="radio" id="purpose" name="purpose">Website
+                                    suggestion</label>
                             </div>
                             <div class="form-group">
                                 <label for="message">Your Message</label>
 
-                                <textarea id="message" rows="4"
+                                <textarea id="message" name="message" rows="4"
                                   placeholder="Write your message here---"></textarea>
                             </div>
                             <div class="form-group checkbox-group">
-                                <label><input type="checkbox">Please Subscribe me to the monthly
+                                <label><input type="checkbox" name="subscribe" id="subscribe">Please
+                                    Subscribe me to the monthly
                                     newsletter</label>
                             </div>
                             <button type="submit" class="btn">Get in Touch With Us</button>
@@ -115,7 +117,7 @@
                 <!--Employee2-->
 
                 <figure class="figure-card">
-                    <img src="images/adam-butono (3).webp" alt="Adam Butono">
+                    <img src="images/adam-butono.webp" alt="Adam Butono">
                     <figcaption>
                         <h3>Adam Butono</h3>
                         <p>Safety Expert</p>

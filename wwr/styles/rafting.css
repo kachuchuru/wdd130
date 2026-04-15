@@ -308,10 +308,6 @@ form input[type="radio"] {
     margin-right: 5px;
 }
 
-form label {
-    display: block;
-}
-
 label[for="newsletter"] {
     display: block;
     text-align: center;
