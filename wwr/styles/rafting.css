@@ -266,7 +266,7 @@ section h2 {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     gap: 20px;
@@ -435,11 +435,20 @@ button {
     position: relative;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    max-width: 840px;
+    margin: 60px auto;
+}
+
+.hero-content p {
+    margin-top: -25px;
+    display: flex;
+    background-color: rgb(183, 39, 235);
+
 }
 
 .grid-container img {
@@ -502,7 +511,8 @@ button {
 .cta {
     text-align: center;
     padding: 40px;
-    background: #5c4b57;
+    background: #cfcdce;
+    margin-top: 20px auto;
 
 }
 
