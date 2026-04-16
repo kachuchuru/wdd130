@@ -276,10 +276,6 @@ section h2 {
     margin: 10px auto;
 }
 
-.card-container {
-    align-items: stretch;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -323,14 +319,8 @@ form input[type="checkbox"] {
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.radio-group label {
-    display: flex;
-    gap: 6px;
     font-weight: normal;
     cursor: pointer;
-
 }
 
 .checkbox-group label {
@@ -378,14 +368,10 @@ form input[type="checkbox"] {
 
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
 .form-group label,
 .form-label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-weight: 600;
     color: #000;
 }
@@ -607,12 +593,7 @@ th {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-.radio-group label {
-    display: flex;
     align-items: center;
-    gap: 6px;
     font-weight: normal;
 }
 
