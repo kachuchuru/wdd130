@@ -505,7 +505,7 @@ button {
 
 .figure-card h3 {
     margin-top: 5px;
-    color: black;
+    color: #000;
 }
 
 .figure-card p {
@@ -532,7 +532,7 @@ button {
 
 .card h3 {
     margin: 15px 0 10px;
-    color: dark;
+    color: #000;
 }
 
 .card p {
@@ -542,7 +542,7 @@ button {
 .cta {
     text-align: center;
     padding: 40px;
-    background: rgb(239, 151, 151);
+    background: #5c4b57;
 
 }
 
@@ -595,7 +595,7 @@ td {
 
 th {
     background: var(--primary-color);
-    color: white;
+    color: #f1faff;
 }
 
 .table.container {
