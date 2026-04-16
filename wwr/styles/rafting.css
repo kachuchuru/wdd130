@@ -34,7 +34,7 @@ header {
 }
 
 header img {
-    grid-column: 2;
+
     height: 100px;
 }
 
@@ -314,15 +314,6 @@ form input[type="checkbox"] {
     width: auto;
 }
 
-.radio-group {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    font-weight: normal;
-    cursor: pointer;
-}
-
 .checkbox-group label {
     display: flex;
     align-items: center;
@@ -595,6 +586,7 @@ th {
     flex-wrap: wrap;
     align-items: center;
     font-weight: normal;
+    cursor: pointer;
 }
 
 .checkbox-group label {
